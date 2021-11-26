@@ -3,8 +3,8 @@ let BASE_BLOG_URL = '';
 
 
 if (process.env.NODE_ENV === 'production') {
-    BASE_AUTH_URL = "https://peerbits-task.herokuapp.com/auth";
-    BASE_BLOG_URL = "https://peerbits-task.herokuapp.com/blog";
+    BASE_AUTH_URL = "https://dry-dawn-60636.herokuapp.com/auth";
+    BASE_BLOG_URL = "https://dry-dawn-60636.herokuapp.com/blog";
 } else {
     BASE_AUTH_URL = "http://localhost:4040/auth";
     BASE_BLOG_URL = "http://localhost:4040/blog";
