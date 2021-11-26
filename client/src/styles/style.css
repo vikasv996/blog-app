@@ -1,0 +1,7 @@
+.delete-button {
+    opacity: 0;
+}
+
+#tr-hover:hover .delete-button {
+    opacity: 1;
+}
