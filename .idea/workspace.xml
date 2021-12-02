@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48f3dd3b-869b-46db-acf6-d4da8a1b3707" name="Changes" comment="Update package.json">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/MainTheme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/auth/NewLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/auth/NewRegister.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/newLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.40887294.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/css/main.40887294.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.3099811a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.3099811a.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/2.3099811a.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/3.7ccb4756.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/3.7ccb4756.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.b29d0cd2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/main.b29d0cd2.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.d4184e16.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build/static/js/runtime-main.d4184e16.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authMaster.js" afterDir="false" />
-    </list>
+    <list default="true" id="48f3dd3b-869b-46db-acf6-d4da8a1b3707" name="Changes" comment="Update ui" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +118,8 @@
       <workItem from="1638202056665" duration="4410000" />
       <workItem from="1638272437768" duration="12000" />
       <workItem from="1638435145021" duration="5300000" />
-      <workItem from="1638453277506" duration="6593000" />
+      <workItem from="1638453277506" duration="7450000" />
+      <workItem from="1638473741558" duration="4472000" />
     </task>
     <task id="LOCAL-00001" summary="Change">
       <created>1637925965402</created>
@@ -199,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637933913439</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update ui">
+      <created>1638460703978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638460703978</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +210,8 @@
     <MESSAGE value="Updated heroku Procfile" />
     <MESSAGE value="Update client base_url" />
     <MESSAGE value="Update package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update package.json" />
+    <MESSAGE value="Update ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ui" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
