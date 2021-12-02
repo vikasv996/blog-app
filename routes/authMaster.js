@@ -57,12 +57,12 @@ authRouter.post('/login', async (req, res, next) => {
         console.log(validatedResult);
         const userExist = await userModel.checkUser(validatedResult.emailId);
         if (!userExist) {
-            return createError.NotFound(`User: ${validatedResult.emailId} not registered`);
+            throw createError.NotFound(`User: ${validatedResult.emailId} not registered`);
         }
 
         const isMatch = await genUtils.checkPwd(validatedResult.password, userExist.password);
         if (!isMatch)
-            return createError.Unauthorized('Email / Password not valid');
+            throw createError.Unauthorized('Email / Password not valid');
         const accessToken = await jwtUtils.createAccessToken(userExist.userId);
 
         return res.send({

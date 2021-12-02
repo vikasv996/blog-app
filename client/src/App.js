@@ -1,11 +1,11 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { isLoggedIn } from "./utils/GenUtils";
-import Login from "./components/auth/Login";
-import Register from "./components/auth/Register";
 import './App.css';
 import Panel from "./components/Panel";
 import SnackbarUtil from "./utils/SnackbarUtil";
+import NewLogin from "./components/auth/NewLogin";
+import NewRegister from "./components/auth/NewRegister";
 
 class App extends React.Component {
 
@@ -40,17 +40,21 @@ class App extends React.Component {
                 {
                     isLoggedIn() ? <Panel/> : (
                         this.state.loginPage ?
-                            <Login
+                            <NewLogin
                                 {...this.state}
                                 handlePageChange={this.handlePageChange}
                             /> :
-                            <Register
+                            <NewRegister
                                 {...this.state}
                                 handlePageChange={this.handlePageChange}
                                 showSnackbar={this.showSnackbar}
                             />
                     )
                 }
+                {/*<NewLogin*/}
+                {/*    {...this.state}*/}
+                {/*    showSnackbar={this.showSnackbar}*/}
+                {/*/>*/}
                 <SnackbarUtil
                     handleSnackBarClick={this.handleSnackBarClick}
                     snackbarOpen={this.state.snackbarOpen}
