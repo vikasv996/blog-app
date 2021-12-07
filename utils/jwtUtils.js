@@ -44,6 +44,8 @@ module.exports.verifyAccessToken = (req, res, next) => {
             }
         }
         const userId = payload.userId;
+        console.log("userId")
+        console.log(userId)
         req.payload = payload;
         next();
         /*redisClient.GET(userId, (err, result) => {
