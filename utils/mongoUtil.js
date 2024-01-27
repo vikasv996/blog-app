@@ -5,7 +5,7 @@ let databaseGlobal;
 
 module.exports.connectToServer = (callback) => {
 
-    mongoClient.connect(process.env.MONGO_URI, { useUnifiedTopology: true })
+    mongoClient.connect(config.MONGO_URI, { useUnifiedTopology: true })
         .then(client => {
             if (config.DEBUG) console.log("Connected correctly to server");
             databaseGlobal = client.db(config.dbName);

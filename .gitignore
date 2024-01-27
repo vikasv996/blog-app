@@ -61,6 +61,5 @@ typings/
 # phpstorm config files.
 idea/
 idea/workspace.xml
-package-lock.json
 .vscode/tasks.json
 client/build

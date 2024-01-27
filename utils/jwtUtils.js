@@ -1,13 +1,14 @@
 const JWT = require('jsonwebtoken');
 const createError = require('http-errors');
 // const redisClient = require('../utils/redisUtil');
+const ACCESS_TOKEN_SECRET = "a5addb4e50500cd1bb47533c72e26795a2490042d8c11403fb5d0f9db75c9e69"
 
 module.exports.createAccessToken = (userId) => {
     return new Promise((resolve, reject) => {
         const payload = {
             userId
         };
-        const secretKey = process.env.ACCESS_TOKEN_SECRET;
+        const secretKey = ACCESS_TOKEN_SECRET;
         const options = {
             expiresIn: '1d',
             issuer: "Vikas Valechha"
@@ -35,7 +36,7 @@ module.exports.verifyAccessToken = (req, res, next) => {
         return next(createError.Unauthorized());
     const authHeader = req.headers['authorization'];
     const token = authHeader.split(' ')[1];
-    JWT.verify(token, process.env.ACCESS_TOKEN_SECRET, {}, (err, payload) => {
+    JWT.verify(token, ACCESS_TOKEN_SECRET, {}, (err, payload) => {
         if (err) {
             if (err.name === "JsonWebTokenError") {
                 return next(createError.Unauthorized());

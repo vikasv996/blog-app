@@ -3,11 +3,11 @@ let BASE_BLOG_URL = '';
 
 
 if (process.env.NODE_ENV === 'production') {
-    BASE_AUTH_URL = "http://128.199.30.219/auth";
-    BASE_BLOG_URL = "http://128.199.30.219/blog";
+    BASE_AUTH_URL = "http://52.91.232.52:4000/auth";
+    BASE_BLOG_URL = "http://52.91.232.52:4000/blog";
 } else {
-    BASE_AUTH_URL = "http://localhost:4040/auth";
-    BASE_BLOG_URL = "http://localhost:4040/blog";
+    BASE_AUTH_URL = "http://localhost:4000/auth";
+    BASE_BLOG_URL = "http://localhost:4000/blog";
 }
 
 export const basePath = "/";

@@ -58,7 +58,7 @@ mongoUtil.connectToServer((error) => {
     if (error) {
         return console.log('MongoClient connection error : ' + error);
     }
-    const port = process.env.PORT || 4040;
+    const port = process.env.PORT || 4000;
     app.listen(port, (error) => {
         if (error) {
             return console.log("Server Down", error);
