@@ -58,8 +58,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# phpstorm config files.
-idea/
+# jetbrains config files.
+.idea/
 idea/workspace.xml
 .vscode/tasks.json
 client/build
